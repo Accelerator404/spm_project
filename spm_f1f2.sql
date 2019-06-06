@@ -797,3 +797,6 @@ DELIMITER ;;
 CREATE TRIGGER `t` BEFORE INSERT ON `click_log` FOR EACH ROW set new.click_time=CURRENT_TIMESTAMP
 ;;
 DELIMITER ;
+
+drop trigger if exists t;
+CREATE TRIGGER `t` AFTER INSERT ON `click_log` FOR EACH ROW set new.click_time=CURRENT_TIMESTAMP;
