@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="SPM_Project">
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
-<<<<<<< HEAD
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/"/>
-=======
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/resource"/>
->>>>>>> 2ede6dae2e5dbf013dd99c8653be503ecfd533fc
         <property name="java-output-path" value="/SPM_Project/build/classes"/>
         <property name="context-root" value="SPM_Project"/>
     </wb-module>

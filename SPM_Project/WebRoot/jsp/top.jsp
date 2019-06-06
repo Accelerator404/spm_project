@@ -253,7 +253,7 @@ body {
 						 <a href="${pageContext.request.contextPath}/jsp/manage/manageUser.jsp"  target="right">人员管理</a>
 					</li>
 					<!-- <li><a href="${pageContext.request.contextPath}/jsp/manage/configInfo.jsp"  target="right">配置管理</a></li>-->
-					<li><a href="${pageContext.request.contextPath}/jsp/count/count.jsp" target="right">访问统计</a></li>
+					<li><a onclick="toCount();" target="right">访问统计</a></li>
 				</c:if>
 			</ul>
 		</div>
