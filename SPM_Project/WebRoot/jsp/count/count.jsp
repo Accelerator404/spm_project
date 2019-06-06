@@ -120,7 +120,7 @@
 				</table>
 				
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4" hidden>
 				<a>详细跟踪记录</a>
 				<div id="details"  style='max-height:400px;border:dashed  gray 0.5px;overflow-y: auto'>
 				<p>2019-05-21 20:13 访问了行业信息</p>
