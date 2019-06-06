@@ -4,10 +4,10 @@
 //----------------------------------------------------------------
 //	Project: SPM System (Client SubSystem) 
 // 	JSP Name  : top.jsp 
-// 	PURPOSE : ҳ�涥����������ʾ
-// 	HISTORY��
-//	Create��
-//	Modify��Han Xinyu Xue yifei    2015.10.24
+// 	PURPOSE : 页面顶部导航栏显示
+// 	HISTORY：
+//	Create：
+//	Modify：Han Xinyu Xue yifei    2015.10.24
 //  Copyright  : BUPTSSE   
 //----------------------------------------------------------------- %>
 <%@ taglib uri="/struts-tags" prefix="s"%>
@@ -196,64 +196,64 @@ body {
 	<body>
 	<div style="margin-left:90%;" >
 	<input type="button" onclick="toinfo();" value="${session.user.userName}" style="width:64px;float:right;margin-right: 24px;">
-	<h3 style="float:right;margin-right: 6px;">��������</h3>
+	<h3 style="float:right;margin-right: 6px;">个人中心</h3>
 	<div margin="0" id="top">
 		<div id="menu2" class="menu" style="margin-left:30%;z-index: 99999" >
 			<ul>
 				<li>
-					<a href="${pageContext.request.contextPath}/enterIndex.do" target="right">��ҳ</a>
+					<a href="${pageContext.request.contextPath}/enterIndex.do" target="right">首页</a>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath}/findTradeInfoList.do" target="right">��ҵ��Ϣ</a>
+					<a href="${pageContext.request.contextPath}/findTradeInfoList.do" target="right">行业信息</a>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath}/listDownLoad.do" target="right">������</a>
+					<a href="${pageContext.request.contextPath}/listDownLoad.do" target="right">下载区</a>
 				</li>
 				<li>
-					<!-- <s:if test="#session.user.position=='ѧ��'">
-						<a href="${pageContext.request.contextPath}/selectCourse4Student.do" target="right">ѧ��</a>
+					<!-- <s:if test="#session.user.position=='学生'">
+						<a href="${pageContext.request.contextPath}/selectCourse4Student.do" target="right">学生</a>
 					</s:if>
-					<s:if test="#session.user.position=='��ʦ'">
-						<a href="${pageContext.request.contextPath}/selectCourse4Teacher.do" target="right">��ʦ</a>
+					<s:if test="#session.user.position=='教师'">
+						<a href="${pageContext.request.contextPath}/selectCourse4Teacher.do" target="right">教师</a>
 					</s:if>
 					-->
 					
 						
-						<a href="${pageContext.request.contextPath}/jsp/course/courseSelect.jsp" target="right">ѡ��</a>
+						<a href="${pageContext.request.contextPath}/jsp/course/courseSelect.jsp" target="right">选课</a>
 						
 					<!--<s:else>	
 						<a href="${pageContext.request.contextPath}/selectCourse4Student.jsp" target="right">
-						ѡ��sss</a>
+						选课sss</a>
 					</s:else>-->
 				</li>
 				<li>
-				<!-- 	<a href="../score/2012score.html" target="right">�ɼ���ѯ</a>
-					<a href="GetScoreAction.action"  target="right">�ɼ���ѯ</a> -->
+				<!-- 	<a href="../score/2012score.html" target="right">成绩查询</a>
+					<a href="GetScoreAction.action"  target="right">成绩查询</a> -->
 					
-					<a href="${pageContext.request.contextPath}/jsp/course/scoreQueryList.jsp" target="right">�ɼ���ѯ</a>
+					<a href="${pageContext.request.contextPath}/jsp/course/scoreQueryList.jsp" target="right">成绩查询</a>
 				   
 				</li>
-				<!-- <li> <a href="${pageContext.request.contextPath}/uploadScoreFile.do"  target="right">�ɼ���ѯ1</a></li>-->
+				<!-- <li> <a href="${pageContext.request.contextPath}/uploadScoreFile.do"  target="right">成绩查询1</a></li>-->
 				<li>
-					<a href="${pageContext.request.contextPath}/jsp/message/mainMessage.jsp" target="right">���԰�</a>
+					<a href="${pageContext.request.contextPath}/jsp/message/mainMessage.jsp" target="right">留言板</a>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath}/listExam.do" target="right">���ϲ���</a>
+					<a href="${pageContext.request.contextPath}/listExam.do" target="right">网上测试</a>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath}/enterintro.do?name=lianxiwomen" target="right">��ϵ����</a>
+					<a href="${pageContext.request.contextPath}/enterintro.do?name=lianxiwomen" target="right">联系我们</a>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath}/logOut.do" target="123">��¼���</a>
+					<a href="${pageContext.request.contextPath}/logOut.do" target="123">登录入口</a>
 				</li>
 				
 				<c:if test="${session.user.position=='1'}">
 					<li>
-						<!-- <a href="${pageContext.request.contextPath}/jsp/manage/manageUser.jsp"  target="right">��Ա����</a> -->
-						 <a href="${pageContext.request.contextPath}/jsp/manage/manageUser.jsp"  target="right">��Ա����</a>
+						<!-- <a href="${pageContext.request.contextPath}/jsp/manage/manageUser.jsp"  target="right">人员管理</a> -->
+						 <a href="${pageContext.request.contextPath}/jsp/manage/manageUser.jsp"  target="right">人员管理</a>
 					</li>
-					<!-- <li><a href="${pageContext.request.contextPath}/jsp/manage/configInfo.jsp"  target="right">���ù���</a></li>-->
-					<li><a onclick="toCount();" target="right">����ͳ��</a></li>
+					<!-- <li><a href="${pageContext.request.contextPath}/jsp/manage/configInfo.jsp"  target="right">配置管理</a></li>-->
+					<li><a href="${pageContext.request.contextPath}/jsp/count/count.jsp" target="right">访问统计</a></li>
 				</c:if>
 			</ul>
 		</div>
@@ -282,7 +282,7 @@ body {
 								 data:data,
 								 success:function(){}
 							 })
-							 console.log(index);//�õ����±�
+							 console.log(index);//拿到了下标
 						 }
 					 }
 				
